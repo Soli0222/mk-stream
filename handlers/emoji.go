@@ -15,7 +15,7 @@ func NoteEmojiAdded(emojiData map[string]interface{}) {
 	localOnly := getBoolStringValue(emojiData, "localOnly")
 	name := getStringValue(emojiData, "name")
 
-	text := "<center>$[sparkle 🎉] カスタム絵文字が追加されました $[sparkle 🎉]\n\n:" + name + ":</center>\n名前: `" + name + "` \nカテゴリー: `" + category + "`\nライセンス: `" + license + "`\nローカルのみ: `" + localOnly + "`"
+	text := "<center>$[sparkle 🎉] カスタム絵文字が追加されました $[sparkle 🎉]\n\n:" + name + ":</center>\n名前: `" + name + "` \n\nカテゴリー: `" + category + "`\nライセンス: `" + license + "`\nローカルのみ: `" + localOnly + "`"
 	note(text)
 }
 
@@ -30,7 +30,7 @@ func NoteEmojiUpdated(emojiData []interface{}) {
 	localOnly := getBoolStringValue(emojiMap, "localOnly")
 	name := getStringValue(emojiMap, "name")
 
-	text := "<center>$[jelly 🔄] カスタム絵文字が更新されました $[jelly 🔄]\n\n:" + name + ":</center>\n名前: `" + name + "` \nカテゴリー: `" + category + "`\nライセンス: `" + license + "`\nローカルのみ: `" + localOnly + "`"
+	text := "<center>$[jelly 🔄] カスタム絵文字が更新されました $[jelly 🔄]\n\n:" + name + ":</center>\n名前: `" + name + "` \n\nカテゴリー: `" + category + "`\nライセンス: `" + license + "`\nローカルのみ: `" + localOnly + "`"
 	note(text)
 }
 
@@ -43,7 +43,7 @@ func NoteEmojiDeleted(emojiData []interface{}) {
 	category := getStringValue(emojiMap, "category")
 	name := getStringValue(emojiMap, "name")
 
-	text := "<center>$[spin.y 🗑️] カスタム絵文字が削除されました $[spin.y 🗑️]\n\n</center>\n名前: `" + name + "` \nカテゴリー: `" + category + "`"
+	text := "<center>$[spin.y 🗑️] カスタム絵文字が削除されました $[spin.y 🗑️]\n\n</center>\n名前: `" + name + "` \n\nカテゴリー: `" + category + "`"
 	note(text)
 }
 
