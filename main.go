@@ -36,7 +36,8 @@ type DisconnectBody struct {
 }
 
 func connectWebSocket(host, token string) (*websocket.Conn, error) {
-	u := url.URL{Scheme: "wss", Host: host, Path: "/streaming", RawQuery: "i=" + token}
+	//u := url.URL{Scheme: "wss", Host: host, Path: "/streaming", RawQuery: "i=" + token}
+	u := url.URL{Scheme: "wss", Host: host, Path: "/streaming"}
 	dialer := websocket.Dialer{}
 
 	conn, _, err := dialer.Dial(u.String(), nil)
