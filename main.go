@@ -112,7 +112,18 @@ func main() {
 	signal.Notify(interrupt, os.Interrupt)
 
 	if err := godotenv.Load(); err != nil {
-		log.Fatalf("Error loading .env file: %v", err)
+		log.Println("Not using .env file")
+	}
+
+	requiredVars := []string{
+		"HOST",
+		"TOKEN",
+	}
+
+	for _, v := range requiredVars {
+		if os.Getenv(v) == "" {
+			log.Fatalf("Environment variable %s is not set", v)
+		}
 	}
 
 	host := os.Getenv("HOST")
