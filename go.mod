@@ -1,6 +1,6 @@
 module mk-stream
 
-go 1.20
+go 1.24.1
 
 require (
 	github.com/google/uuid v1.4.0

@@ -1,4 +1,4 @@
-FROM golang:1.22.3-alpine3.19 as build
+FROM golang:1.24.1-alpine as build
 ADD ./ ./
 RUN go build main.go
 
