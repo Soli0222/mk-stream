@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/Soli0222/mk-stream/compare/v2.1.0...v2.2.0) (2026-08-08)
+
+
+### 新機能
+
+* publish helm chart as OCI artifact from this repo ([#49](https://github.com/Soli0222/mk-stream/issues/49)) ([ad28af0](https://github.com/Soli0222/mk-stream/commit/ad28af074ec95bbdebcb2a69fed8b9b60772a6b5))
+
 ## [2.1.0](https://github.com/Soli0222/mk-stream/compare/2.0.0...v2.1.0) (2026-07-26)
 
 
