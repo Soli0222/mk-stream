@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/Soli0222/mk-stream/compare/v2.2.0...v2.3.0) (2026-08-09)
+
+
+### 新機能
+
+* **ci:** rebuild the release pipeline as a DAG on shared workflows ([#52](https://github.com/Soli0222/mk-stream/issues/52)) ([5945338](https://github.com/Soli0222/mk-stream/commit/59453384c2c08912f60e6d3a8073df33cb99780e))
+
 ## [2.2.0](https://github.com/Soli0222/mk-stream/compare/v2.1.0...v2.2.0) (2026-08-08)
 
 
