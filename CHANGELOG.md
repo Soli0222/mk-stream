@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/Soli0222/mk-stream/compare/v2.3.0...v2.3.1) (2026-10-16)
+
+
+### バグ修正・依存関係の更新
+
+* **ci:** test dependency PRs and report Renovate errors ([#60](https://github.com/Soli0222/mk-stream/issues/60)) ([865bcd3](https://github.com/Soli0222/mk-stream/commit/865bcd38cfd043b6c449788b2bf5608a245dd378))
+
 ## [2.3.0](https://github.com/Soli0222/mk-stream/compare/v2.2.0...v2.3.0) (2026-08-09)
 
 
