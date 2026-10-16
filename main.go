@@ -26,7 +26,7 @@ const (
 )
 
 func printBanner() {
-	fmt.Println(asciiArt)
+	fmt.Printf("%s\n", asciiArt)
 	fmt.Printf("%s v%s\n\n", appName, appVersion)
 }
 
